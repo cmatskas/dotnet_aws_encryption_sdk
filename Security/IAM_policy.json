@@ -1,0 +1,16 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Sid": "Stmt1662674164163",
+        "Action": [
+          "kms:Decrypt",
+          "kms:DescribeKey",
+          "kms:Encrypt",
+          "kms:GenerateDataKey"
+        ],
+        "Effect": "Allow",
+        "Resource": "arn:aws:kms:<account region>:<your account>:key/<your KMS key id>"
+      }
+    ]
+  }
